@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Light Novel Tracker",
+    "description": "A simple way to keep track of web novels",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": ["tabs", 
+                    "activeTab",
+                    "storage",
+                    "file:///*"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
